@@ -15,6 +15,8 @@ const StyledHeader = styled.header`
   top: 0;
   z-index: 11;
   padding: 0px 50px;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: var(--nav-height);
   background-color: rgba(10, 25, 47, 0.85);
@@ -57,6 +59,7 @@ const StyledNav = styled.nav`
   ${({ theme }) => theme.mixins.flexBetween};
   position: relative;
   width: 100%;
+  max-width: 1300px;
   color: var(--lightest-slate);
   font-family: var(--font-mono);
   counter-reset: item 0;
@@ -67,7 +70,7 @@ const StyledNav = styled.nav`
 
     a {
       color: var(--green);
-      width: 42px;
+      // width: 42px;
       height: 42px;
 
       &:hover,
@@ -120,7 +123,7 @@ const StyledLinks = styled.div`
     }
   }
 
-  .resume-button {
+  .primary-button {
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
@@ -173,8 +176,12 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+    <a
+      className="primary-button"
+      href="https://forms.gle/RwjKHuUBb46fSp8L7"
+      target="_blank"
+      rel="noopener noreferrer">
+      Get report
     </a>
   );
 

@@ -1,23 +1,23 @@
 module.exports = {
-  email: 'yuxianggu@gmail.com',
+  email: 'contact@narratelab.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/guyuxiang',
+      url: 'https://github.com/masslessai',
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/yuxianggu',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/yuxianggu',
-    },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/guyuxiang',
-    },
+    // {
+    //   name: 'Instagram',
+    //   url: 'https://www.instagram.com/yuxianggu',
+    // },
+    // {
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/yuxianggu',
+    // },
+    // {
+    //   name: 'Linkedin',
+    //   url: 'https://www.linkedin.com/in/guyuxiang',
+    // },
     // {
     //   name: 'Codepen',
     //   url: 'https://codepen.io/bchiang7',
@@ -25,30 +25,30 @@ module.exports = {
   ],
 
   navLinks: [
-    {
-      name: 'About',
-      url: '/#about',
-    },
-    {
-      name: 'Experience',
-      url: '/#jobs',
-    },
-    {
-      name: 'Work',
-      url: '/#projects',
-    },
-    {
-      name: 'Contact',
-      url: '/#contact',
-    },
+    // {
+    //   name: 'About',
+    //   url: '/#about',
+    // },
+    // {
+    //   name: 'Experience',
+    //   url: '/#jobs',
+    // },
+    // {
+    //   name: 'Feature',
+    //   url: '/#projects',
+    // },
+    // {
+    //   name: 'Contact',
+    //   url: '/#contact',
+    // },
     {
       name: 'Blog',
       url: '/blog',
     },
-    {
-      name: 'Knowledge base',
-      url: '/notes',
-    },
+    // {
+    //   name: 'Knowledge base',
+    //   url: '/notes',
+    // },
   ],
 
   colors: {

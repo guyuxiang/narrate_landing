@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { email } from '@config';
+// import { email } from '@config';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -39,7 +39,7 @@ const StyledHeroSection = styled.section`
     max-width: 540px;
   }
 
-  .email-link {
+  .primary-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
@@ -58,22 +58,18 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Yuxiang Gu.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hi, this is</h1>;
+  const two = <h2 className="big-heading">Narrate</h2>;
+  const three = <h3 className="big-heading">Discover unexplored content ideas for your brand</h3>;
   const four = (
     <p>
-      I'm a software engineer specializing in building (and occasionally designing) exceptional
-      digital experiences. Currently, I'm focused on building accessible, human-centered products at{' '}
-      <a href="https://venturuem.io/" target="_blank" rel="noreferrer">
-        Ventureum
-      </a>
-      .
+      Use our content insights to generate ideas, create high-performing content, monitor your
+      performance and identify influencers.
     </p>
   );
   const five = (
-    <a href={`mailto:${email}`} className="email-link">
-      Get In Touch
+    <a href="https://forms.gle/RwjKHuUBb46fSp8L7" className="primary-link">
+      Get free research report
     </a>
   );
 
