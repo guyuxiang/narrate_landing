@@ -43,7 +43,7 @@ module.exports = {
     },
     {
       name: 'Blog',
-      url: '/pensieve',
+      url: '/blog',
     },
     {
       name: 'Knowledge base',
