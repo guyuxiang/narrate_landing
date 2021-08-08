@@ -1,8 +1,8 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "narrate",
+  "description": "narrate website",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "narrate",
   "repository": {
     "type": "git",
     "url": "https://github.com/guyuxiang/guyuxiang.github.io"
