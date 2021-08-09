@@ -5,7 +5,7 @@ module.exports = {
     title: 'Narrate',
     description: 'Discover unexplored content ideas for your brand',
     siteUrl: 'https://narratelab.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: 'src/images/front.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
   },
   plugins: [
