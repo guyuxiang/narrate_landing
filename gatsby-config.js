@@ -5,8 +5,9 @@ module.exports = {
     title: 'Narrate',
     description: 'Discover unexplored content ideas for your brand',
     siteUrl: 'https://narratelab.com', // No trailing slash allowed!
-    image: '/src/images/front.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    image:
+      'https://raw.githubusercontent.com/guyuxiang/narrate_landing/master/src/images/front.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@narratelab',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
