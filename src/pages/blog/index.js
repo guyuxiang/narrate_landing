@@ -23,7 +23,7 @@ const StyledMainContainer = styled.main`
   }
 
   footer {
-    ${({ theme }) => theme.mixins.flexBetween};
+    // ${({ theme }) => theme.mixins.flexBetween};
     width: 100%;
     margin-top: 20px;
   }

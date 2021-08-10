@@ -110,7 +110,10 @@ const StyledLinks = styled.div`
       font-size: var(--fz-xs);
 
       a {
-        padding: 60px;
+        padding-top: 8px;
+        padding-right: 50px;
+        padding-bottom: 8px;
+        padding-left: 50px;
 
         &:before {
           // content: '0' counter(item) '.';

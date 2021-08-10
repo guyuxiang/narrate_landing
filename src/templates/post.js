@@ -61,20 +61,12 @@ const PostTemplate = ({ data, location }) => {
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/blog">All memories</Link>
+          <Link to="/blog">all blogs</Link>
         </span>
 
         <StyledPostHeader>
           <h1 className="medium-heading">{title}</h1>
           <p className="subtitle">
-            <time>
-              {new Date(date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}
-            </time>
-            <span>&nbsp;&mdash;&nbsp;</span>
             {tags &&
               tags.length > 0 &&
               tags.map((tag, i) => (
@@ -82,6 +74,15 @@ const PostTemplate = ({ data, location }) => {
                   #{tag}
                 </Link>
               ))}
+          </p>
+          <p>
+            <time>
+              {new Date(date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>
           </p>
         </StyledPostHeader>
 
@@ -101,7 +102,7 @@ PostTemplate.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query ($path: String!) {
+  query($path: String!) {
     markdownRemark(frontmatter: { slug: { eq: $path } }) {
       html
       frontmatter {

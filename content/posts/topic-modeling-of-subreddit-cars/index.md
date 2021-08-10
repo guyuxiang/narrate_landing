@@ -1,12 +1,14 @@
 ---
-title: Accessible Clickable Cards
-description: Clickable cards with multiple child links
-date: 2021-04-21
-draft: true
-slug: /blog/clickable-cards
+title: Content research on subreddit r/cars
+description: A case study for content research on subreddit r/cars
+date: 2021-08-10
+draft: false
+slug: /blog/topic-modeling-of-subreddit-cars
 tags:
-  - Accessibility
-  - CSS
+  - reddit
+  - topic_modeling
+  - content_marketing
+  - case_study
 ---
 
 [Codepen Demo](https://codepen.io/bchiang7/pen/xxRBvgd?editors=1100)
