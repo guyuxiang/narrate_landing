@@ -14,6 +14,10 @@ module.exports = {
       name: 'Twitter',
       url: 'https://twitter.com/NarrateLab',
     },
+    {
+      name: 'Discord',
+      url: 'https://discord.gg/Nxfs4Mam7M',
+    },
     // {
     //   name: 'Linkedin',
     //   url: 'https://www.linkedin.com/in/guyuxiang',

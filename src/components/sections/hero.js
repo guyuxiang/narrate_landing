@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React from 'react';
+// import React, { useState, useEffect } from 'react';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 // import { email } from '@config';
-import { navDelay, loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
+// import { navDelay, loaderDelay } from '@utils';
+// import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -29,14 +30,15 @@ const StyledHeroSection = styled.section`
   }
 
   h3 {
-    margin-top: 10px;
-    color: var(--slate);
+    margin-bottom: 24px;
+    // color: var(--slate);
     line-height: 0.9;
+    color: var(--green);
   }
 
   p {
     margin: 20px 0 0;
-    max-width: 540px;
+    max-width: 720px;
   }
 
   .primary-link {
@@ -46,25 +48,27 @@ const StyledHeroSection = styled.section`
 `;
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const prefersReducedMotion = usePrefersReducedMotion();
+  // const [isMounted, setIsMounted] = useState(false);
+  // const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+  // useEffect(() => {
+  //   if (prefersReducedMotion) {
+  //     return;
+  //   }
 
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
-  }, []);
+  //   const timeout = setTimeout(() => setIsMounted(true), navDelay);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
-  const one = <h1>Hi, this is</h1>;
-  const two = <h2 className="big-heading">Narrate</h2>;
-  const three = <h3 className="big-heading">Discover unexplored content ideas for your brand</h3>;
+  // const one = <h1>Hi, this is</h1>;
+  const two = <h3 className="medium-heading">Think SEO beyond keyword</h3>;
+  const three = <h2 className="big-heading">Discover Unexplored Content Ideas</h2>;
   const four = (
     <p>
-      Use our content insights to generate ideas, create high-performing content, monitor your
-      performance and identify influencers.
+      Narrate is the next-generation content inspiration solution powered by cutting-edge
+      application of artificial intelligence, which let you go beyond traditional keyword-based SEO.
+      You can use our content insights to generate ideas, create high-performing content, monitor
+      your performance and identify influencers.
     </p>
   );
   const five = (
@@ -73,11 +77,16 @@ const Hero = () => {
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [two, three, four, five];
 
   return (
     <StyledHeroSection>
-      {prefersReducedMotion ? (
+      <>
+        {items.map((item, i) => (
+          <div key={i}>{item}</div>
+        ))}
+      </>
+      {/* {prefersReducedMotion ? (
         <>
           {items.map((item, i) => (
             <div key={i}>{item}</div>
@@ -92,7 +101,7 @@ const Hero = () => {
               </CSSTransition>
             ))}
         </TransitionGroup>
-      )}
+      )} */}
     </StyledHeroSection>
   );
 };

@@ -155,7 +155,7 @@ const GlobalStyle = createGlobalStyle`
 
   .medium-heading {
     margin: 0;
-    font-size: clamp(40px, 8vw, 60px);
+    font-size: clamp(28px, 7vw, 60px);
   }
 
   .numbered-heading {
@@ -171,7 +171,7 @@ const GlobalStyle = createGlobalStyle`
       position: relative;
       bottom: 4px;
       counter-increment: section;
-      content: '0' counter(section) '.';
+      // content: '0' counter(section) '.';
       margin-right: 10px;
       color: var(--green);
       font-family: var(--font-mono);
