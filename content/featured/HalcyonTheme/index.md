@@ -1,16 +1,20 @@
 ---
 date: '1'
-title: 'Case Study on Automobile market'
-cover: './obi-onyeador-aZKJEvydrNM-unsplash.jpg'
+title: 'Case Study on Subreddits'
+cover: './brett-jordan-0FytazjHhxs-unsplash.jpg'
 # github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+external: 'https://share.streamlit.io/masslessai/narrate-streamlit'
 tech:
-  -
-  - Sublime Text
-  - Atom
-  - iTerm2
-  - Hyper
+  - Reddit
+  - topic
+  - requested
 showInProjects: false
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+We use our AI algorithm to go thorough related posts in a certain subreddit and summarize all the topics with these following subreddits,
+[entrepreneur](https://www.reddit.com/r/entrepreneur/),
+[entrepreneurridealong](https://www.reddit.com/r/entrepreneurridealong/),
+[saas](https://www.reddit.com/r/saas/),
+[sideproject](https://www.reddit.com/r/sideproject/),
+[Sneakers](https://www.reddit.com/r/Sneakers/),
+[startups](https://www.reddit.com/r/startups/). Checkout our results in the link below.
