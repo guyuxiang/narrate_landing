@@ -230,6 +230,14 @@ const StyledProject = styled.li`
     }
   }
 
+  .primary-button {
+    ${({ theme }) => theme.mixins.smallButton};
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: var(--fz-xs);
+  }
+
   .project-image {
     ${({ theme }) => theme.mixins.boxShadow};
     grid-column: 6 / -1;
@@ -344,7 +352,8 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
+            const { external, title, github, cover } = frontmatter;
+            // const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -362,13 +371,13 @@ const Featured = () => {
                       dangerouslySetInnerHTML={{ __html: html }}
                     />
 
-                    {tech.length && (
+                    {/* {tech.length && (
                       <ul className="project-tech-list">
                         {tech.map((tech, i) => (
                           <li key={i}>{tech}</li>
                         ))}
                       </ul>
-                    )}
+                    )} */}
 
                     <div className="project-links">
                       {github && (
@@ -377,8 +386,9 @@ const Featured = () => {
                         </a>
                       )}
                       {external && (
-                        <a href={external} aria-label="External Link" className="external">
-                          <Icon name="External" />
+                        <a href={external} aria-label="External Link" className="primary-button">
+                          {/* <Icon name="External" /> */}
+                          Check out our reports
                         </a>
                       )}
                     </div>
